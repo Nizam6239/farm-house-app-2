@@ -1,83 +1,399 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Farmhouse-App</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <script src="script.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <div>
-        <div class="navbar">
-        <div class="head">
-                <h1 >Farmhouse App</h1>
-            </div>
-                <ul class="list navbar-menu" id="navbarMenu">
-                    <li class="listitem"><a href="#">Menu</a></li>
-                    <li class="listitem"><a href="#Activities">Contact</a></li>
-                    <li class="listitem"><a href="#">Photos</a></li>
-                    <li class="listitem"><a href="#">Review</a></li>
-                </ul>
+      <nav>
+        <div class="wrapper">
+          <div class="logo"><a href="#">Farmhouse App</a></div>
+          <input type="radio" name="slider" id="menu-btn" />
+          <input type="radio" name="slider" id="close-btn" />
+          <ul class="nav-links">
+            <label for="close-btn" class="btn close-btn"
+              ><i class="fas fa-times"></i
+            ></label>
+            <li><a href="#">Home</a></li>
+            <li><a href="#fun-activities">Fun Activities</a></li>
+            <li><a href="#nature-activities">Nature Activities</a></li>
+            <li><a href="#more">More</a></li>
+            <!-- <li>
+              <a href="#" class="desktop-item">Dropdown Menu</a>
+              <input type="checkbox" id="showDrop" />
+              <label for="showDrop" class="mobile-item">Dropdown Menu</label>
+              <ul class="drop-menu">
+                <li><a href="#">Drop menu 1</a></li>
+                <li><a href="#">Drop menu 2</a></li>
+                <li><a href="#">Drop menu 3</a></li>
+                <li><a href="#">Drop menu 4</a></li>
+              </ul>
+            </li> -->
+            <!-- <li>
+              <a href="#" class="desktop-item">Mega Menu</a>
+              <input type="checkbox" id="showMega" />
+              <label for="showMega" class="mobile-item">Mega Menu</label>
+              <div class="mega-box">
+                <div class="content">
+                  <div class="row">
+                    <img
+                      src="https://fadzrinmadu.github.io/hosted-assets/responsive-mega-menu-and-dropdown-menu-using-only-html-and-css/img.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="row">
+                    <header>Design Services</header>
+                    <ul class="mega-links">
+                      <li><a href="#">Graphics</a></li>
+                      <li><a href="#">Vectors</a></li>
+                      <li><a href="#">Business cards</a></li>
+                      <li><a href="#">Custom logo</a></li>
+                    </ul>
+                  </div>
+                  <div class="row">
+                    <header>Email Services</header>
+                    <ul class="mega-links">
+                      <li><a href="#">Personal Email</a></li>
+                      <li><a href="#">Business Email</a></li>
+                      <li><a href="#">Mobile Email</a></li>
+                      <li><a href="#">Web Marketing</a></li>
+                    </ul>
+                  </div>
+                  <div class="row">
+                    <header>Security services</header>
+                    <ul class="mega-links">
+                      <li><a href="#">Site Seal</a></li>
+                      <li><a href="#">VPS Hosting</a></li>
+                      <li><a href="#">Privacy Seal</a></li>
+                      <li><a href="#">Website design</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li> -->
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+          <label for="menu-btn" class="btn menu-btn"
+            ><i class="fas fa-bars"></i
+          ></label>
         </div>
-        <div class="img-container">
-            <h1></h1>
-        </div>
-        <div class="navbar-toggle" id="navbarToggle">&#9776;</div>
-        <h2>Fun activities</h2>
+      </nav>
 
+      <div class="body-text">
+        <div class="title">Nainsingh Brahma Vedic Kutir</div>
+        <div class="sub-title">"Modernity with Nature and Culture"</div>
+        <div class="sub-hindi-title">नैनसिंह ब्रह्मा वैदिक कुटीर</div>
+      </div>
+      <div class="img-container">
+        <h1></h1>
+      </div>
+      <div class="navbar-toggle" id="navbarToggle">&#9776;</div>
+      <h2 id="fun-activities">Fun activities</h2>
 
-
-        <div class="images images-yellow-bg">
-            <img class='image' src="./images/download.jpeg" width="350px" height="250px">
-            <img class='image' src="./images/fun-activity-farm-house-1.webp" width="350px" height="250px">
-            <img class='image' src="./images/images (1).jpeg" width="350px" height="250px">
-            <img class='image' src="./images/images (2).jpeg" width="350px" height="250px">
-            <img class='image' src="./images/images.jpeg" width="350px" height="250px">
-            <img class='image' src="./images/obstacle-course (1).jpg" width="350px" height="250px">
-            <!-- <img class='image' src="./images/timothy-eberly-XemjjFd_4qE-unsplash.jpg" width="350px" height="250px"> -->
-        </div>
-        <div class="images images-white-bg">
-            <img class='image' src="./images/download.jpeg" width="350px" height="250px">
-            <img class='image' src="./images/fun-activity-farm-house-1.webp" width="350px" height="250px">
-            <img class='image' src="./images/images (1).jpeg" width="350px" height="250px">
-            <img class='image' src="./images/images (2).jpeg" width="350px" height="250px">
-            <img class='image' src="./images/images.jpeg" width="350px" height="250px">
-            <img class='image' src="./images/obstacle-course (1).jpg" width="350px" height="250px">
-        </div>
-      <section id="Activities">
+      <div class="images images-yellow-bg">
+        <img
+          class="image"
+          src="./images/download.jpeg"
+          width="350px"
+          height="250px"
+        />
+        <img
+          class="image"
+          src="./images/fun-activity-farm-house-1.webp"
+          width="350px"
+          height="250px"
+        />
+        <img
+          class="image"
+          src="./images/images (1).jpeg"
+          width="350px"
+          height="250px"
+        />
+        <img
+          class="image"
+          src="./images/images (2).jpeg"
+          width="350px"
+          height="250px"
+        />
+        <img
+          class="image"
+          src="./images/images.jpeg"
+          width="350px"
+          height="250px"
+        />
+        <img
+          class="image"
+          src="./images/obstacle-course (1).jpg"
+          width="350px"
+          height="250px"
+        />
+        <!-- <img class='image' src="./images/timothy-eberly-XemjjFd_4qE-unsplash.jpg" width="350px" height="250px"> -->
+      </div>
+      <div class="images images-white-bg">
+        <img
+          class="image"
+          src="./images/download.jpeg"
+          width="350px"
+          height="250px"
+        />
+        <img
+          class="image"
+          src="./images/fun-activity-farm-house-1.webp"
+          width="350px"
+          height="250px"
+        />
+        <img
+          class="image"
+          src="./images/images (1).jpeg"
+          width="350px"
+          height="250px"
+        />
+        <img
+          class="image"
+          src="./images/images (2).jpeg"
+          width="350px"
+          height="250px"
+        />
+        <img
+          class="image"
+          src="./images/images.jpeg"
+          width="350px"
+          height="250px"
+        />
+        <img
+          class="image"
+          src="./images/obstacle-course (1).jpg"
+          width="350px"
+          height="250px"
+        />
+      </div>
+      <section id="nature-activities">
         <h2 id="Activities">The Activities which Connect You with Nature</h2>
         <div class="images images-yellow-bg">
-            <img class='image' src="./images/download.jpeg" width="350px" height="250px">
-            <img class='image' src="./images/fun-activity-farm-house-1.webp" width="350px" height="250px">
-            <img class='image' src="./images/timothy-eberly-XemjjFd_4qE-unsplash.jpg" width="350px" height="250px">
+          <img
+            class="image"
+            src="./images/download.jpeg"
+            width="350px"
+            height="250px"
+          />
+          <img
+            class="image"
+            src="./images/fun-activity-farm-house-1.webp"
+            width="350px"
+            height="250px"
+          />
+          <img
+            class="image"
+            src="./images/timothy-eberly-XemjjFd_4qE-unsplash.jpg"
+            width="350px"
+            height="250px"
+          />
         </div>
         <div class="images images-white-bg">
-            <img class='image' src="./images/images (2).jpeg" width="350px" height="250px">
-            <img class='image' src="./images/images.jpeg" width="350px" height="250px">
-            <img class='image' src="./images/obstacle-course (1).jpg" width="350px" height="250px">
+          <img
+            class="image"
+            src="./images/images (2).jpeg"
+            width="350px"
+            height="250px"
+          />
+          <img
+            class="image"
+            src="./images/images.jpeg"
+            width="350px"
+            height="250px"
+          />
+          <img
+            class="image"
+            src="./images/obstacle-course (1).jpg"
+            width="350px"
+            height="250px"
+          />
         </div>
         <div class="images images-yellow-bg">
-            <img class='image' src="./images/download.jpeg" width="350px" height="250px">
-            <img class='image' src="./images/fun-activity-farm-house-1.webp" width="350px" height="250px">
-            <img class='image' src="./images/timothy-eberly-XemjjFd_4qE-unsplash.jpg" width="350px" height="250px">
+          <img
+            class="image"
+            src="./images/download.jpeg"
+            width="350px"
+            height="250px"
+          />
+          <img
+            class="image"
+            src="./images/fun-activity-farm-house-1.webp"
+            width="350px"
+            height="250px"
+          />
+          <img
+            class="image"
+            src="./images/timothy-eberly-XemjjFd_4qE-unsplash.jpg"
+            width="350px"
+            height="250px"
+          />
         </div>
-    </section>
-        <h2>Village home made food</h2>
-        <div class="images images-white-bg">
-            <img class='image' src="./images/download.jpeg" width="250px" height="250px">
-            <img class='image' src="./images/fun-activity-farm-house-1.webp" width="250px" height="250px">
-            <img class='image' src="./images/images (1).jpeg" width="250px" height="250px">
-            <img class='image' src="./images/images (2).jpeg" width="250px" height="250px">
-        </div>
+      </section>
+      <h2>Village home made food</h2>
+      <div class="images images-white-bg" id="more">
+        <img
+          class="image"
+          src="./images/download.jpeg"
+          width="250px"
+          height="250px"
+        />
+        <img
+          class="image"
+          src="./images/fun-activity-farm-house-1.webp"
+          width="250px"
+          height="250px"
+        />
+        <img
+          class="image"
+          src="./images/images (1).jpeg"
+          width="250px"
+          height="250px"
+        />
+        <img
+          class="image"
+          src="./images/images (2).jpeg"
+          width="250px"
+          height="250px"
+        />
+      </div>
 
-        <h2>Destination Weddings</h2>
-        <div class="images images-yellow-bg">
-            <img class='image' src="./images/download.jpeg" width="250px" height="250px">
-            <img class='image' src="./images/fun-activity-farm-house-1.webp" width="250px" height="250px">
-            <img class='image' src="./images/images (1).jpeg" width="250px" height="250px">
-            <img class='image' src="./images/images (2).jpeg" width="250px" height="250px">
-        </div>
+      <h2>Destination Weddings</h2>
+      <div class="images images-yellow-bg">
+        <img
+          class="image"
+          src="./images/download.jpeg"
+          width="250px"
+          height="250px"
+        />
+        <img
+          class="image"
+          src="./images/fun-activity-farm-house-1.webp"
+          width="250px"
+          height="250px"
+        />
+        <img
+          class="image"
+          src="./images/images (1).jpeg"
+          width="250px"
+          height="250px"
+        />
+        <img
+          class="image"
+          src="./images/images (2).jpeg"
+          width="250px"
+          height="250px"
+        />
+      </div>
     </div>
-</body>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>About</h6>
+            <p class="text-justify">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was
+              popularised in the 1960s with the release of Letraset sheets
+              containing Lorem Ipsum passages
+            </p>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Categories</h6>
+            <ul class="footer-links">
+              <li><a href="http://scanfcode.com/category/c-language/">Link 1</a></li>
+              <li>
+                <a href="http://scanfcode.com/category/front-end-development/"
+                  >Link 2</a
+                >
+              </li>
+              <li>
+                <a href="http://scanfcode.com/category/back-end-development/"
+                  >Link 3</a
+                >
+              </li>
+              <li>
+                <a
+                  href="http://scanfcode.com/category/java-programming-language/"
+                  >Link 4</a
+                >
+              </li>
+              <li>
+                <a href="http://scanfcode.com/category/android/">Link 5</a>
+              </li>
+              <li>
+                <a href="http://scanfcode.com/category/templates/">Link 6</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="http://scanfcode.com/about/">About Us</a></li>
+              <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
+              <li>
+                <a href="http://scanfcode.com/contribute-at-scanfcode/"
+                  >Contribute</a
+                >
+              </li>
+              <li>
+                <a href="http://scanfcode.com/privacy-policy/"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">
+              Copyright &copy; 2017 All Rights Reserved by
+              <a href="#">Nizam </a>.
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li>
+                <a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li>
+                <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li>
+                <a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a>
+              </li>
+              <li>
+                <a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
